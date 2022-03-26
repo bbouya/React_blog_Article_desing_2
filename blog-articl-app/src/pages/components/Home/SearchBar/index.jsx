@@ -1,8 +1,18 @@
 import React from 'react'
-
-const SearchBar = () => {
+import './styles.css'
+const SearchBar = ({ value, handleSearchkey, clearSearch, formSubmit }) => {
   return (
-    <div>
+    <div className='searchBar-wrap'>
+        <form>
+            <input 
+            type = 'text' 
+            onChange={handleSearchkey}
+            placeholder='Search by category' 
+            value={value}>
+            </input>
+            {value && <span onClick= {clearSearch}>x</span>}
+            <button>GO</button>
+        </form>
         
     </div>
   )
