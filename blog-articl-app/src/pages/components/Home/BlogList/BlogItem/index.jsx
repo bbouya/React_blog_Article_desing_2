@@ -1,9 +1,11 @@
 import React from 'react'
 import './styles.css'
 
-const BlogItem = () => {
+const BlogItem = ({blog}) => {
   return (
-    <div>BlogItem</div>
+    <div>
+        <h1> Blog Item</h1>
+    </div>
   )
 }
 
