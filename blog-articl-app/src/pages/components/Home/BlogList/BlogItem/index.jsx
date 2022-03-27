@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles.css'
 
-const BlogItem = ({blog}) => {
+const BlogItem = ({blog:{id,description,title,createAt,authorName, authorAvatar, category, cover},}) => {
   return (
-    <div>
-        <h1> Blog Item</h1>
+    <div className='blogItem-wrap'>
+        <img src={cover} alt="cover"/>
     </div>
   )
 }

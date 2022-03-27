@@ -3,6 +3,7 @@ import Blogist from '../components/Home/BlogList';
 import BlogItem from '../components/Home/BlogList/BlogItem';
 import Header from '../components/Home/Header';
 import SearchBar from '../components/Home/SearchBar';
+import { blogList } from '../config/data';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         {/* Search bar */}
         <SearchBar/>
         {/* Blog list empty list */}
-        <Blogist blogs={}/>
+        <Blogist blogs={blogList}/>
     </div>
   )
 }
