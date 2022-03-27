@@ -1,13 +1,15 @@
-import React from 'react'
-import './styles.css'
-import BlogItem from './BlogItem'
+import React from 'react';
+import BlogItem from './BlogItem';
+import './styles.css';
 
-const Blogist = ({blogs}) => {
+const BlogList = ({ blogs }) => {
   return (
-    <div className='blogList-wrap'> 
-        {blogs.map(blog=><BlogItem blog = {blog} key={blog.id}/>)}
+    <div className='blogList-wrap'>
+      {blogs.map((blog) => (
+        <BlogItem blog={blog} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Blogist
+export default BlogList;
